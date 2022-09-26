@@ -255,7 +255,7 @@ footer {
     display: flex;
     align-self: center;
     pointer-events: none;
-    width: 270px;
+    width: 340px;
     opacity: 0;
     display: flex;
     justify-content: space-between;
