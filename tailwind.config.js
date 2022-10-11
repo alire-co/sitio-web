@@ -14,8 +14,8 @@ module.exports = {
                 }
             },
             fontFamily: {
-                primary: ['Roboto'],
-                code: ['Roboto Mono']
+                primary: ['Roboto', 'ui-sans', 'sans'],
+                code: ['Roboto Mono', 'ui-monospace', 'monospace']
             }
         },
     },

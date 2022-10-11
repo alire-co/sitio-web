@@ -6,6 +6,7 @@ var TxtType = function(el, toRotate, period) {
     this.txt = '';
     this.tick();
     this.isDeleting = false;
+    this.letterCounter = -1;
 };
 
 TxtType.prototype.tick = function() {
@@ -13,15 +14,17 @@ TxtType.prototype.tick = function() {
     var fullTxt = this.toRotate[i];
 
     if (this.isDeleting) {
-        this.txt = fullTxt.substring(0, this.txt.length - 1);
+        this.txt = fullTxt.substring(0, this.letterCounter - 1);
+        this.letterCounter--;
     } else {
-        this.txt = fullTxt.substring(0, this.txt.length + 1);
+        this.txt = fullTxt.substring(0, this.letterCounter + 1);
+        this.letterCounter++;
     }
 
     this.el.innerHTML = '<span class="wrap">' + this.txt + '</span>';
 
     var that = this;
-    var delta = 200 - Math.random() * 100;
+    var delta = 300 - Math.random() * 100;
 
     if (this.isDeleting) {
         delta /= 2;
@@ -33,6 +36,7 @@ TxtType.prototype.tick = function() {
     } else if (this.isDeleting && this.txt === '') {
         this.isDeleting = false;
         this.loopNum++;
+        this.letterCounter = -1;
         delta = 500;
     }
 

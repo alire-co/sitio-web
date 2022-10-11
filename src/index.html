@@ -24,36 +24,43 @@
     <!-- Google Analytics -->
 
 
-    <!-- <link rel="shortcut icon" href="/favicon.ico"> -->
-    <!-- <link rel="icon" type="image/svg+xml" href="/favicon.svg"> -->
-    <!-- <link rel="mask-icon" href="/favicon.svg" color="#8D46E7"> -->
+    <link rel="shortcut icon" href="./img/favicon.ico">
+    <link rel="icon" type="image/svg+xml" href="./img/favicon.svg">
+    <link rel="mask-icon" href="./img/favicon.svg" color="#000">
 
-    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="./index.css">
     <script src="./main.js"></script>
 
 </head>
 
-<body class="dark">
-    <div class="w-screen h-full relative overflow-hidden img-background">
-        <div class="w-full h-full main-background"></div>
-        <p class="absolute top-0 left-0 text-3xl mt-10 ml-10 text-primary font-code animate-in slide-in-from-top duration-500">alire.co</p>
+<body class="dark bg-black">
+    <div class="w-full h-full relative overflow-hidden img-background">
+        <div class="w-full h-full main-background">
+            <picture>
+                <source srcset="./img/alexander-sinn-07bxCZgKY-k-unsplash.jpg?as=avif&width=800" type="image/avif" />
+                <source srcset="./img/alexander-sinn-07bxCZgKY-k-unsplash.jpg?as=webp&width=800" type="image/webp" />
+                <source srcset="./img/alexander-sinn-07bxCZgKY-k-unsplash.jpg?width=800" type="image/jpeg" />
+                <img class="w-full h-full object-cover relative block -z-10 animate-in fade-in duration-2000 delay-1000" src="./img/alexander-sinn-07bxCZgKY-k-unsplash.jpg?width=800" alt="keyboard as background" />
+            </picture>
+        </div>
+        <p class="absolute top-0 left-0 text-3xl mt-10 ml-10 text-primary font-code animate-in slide-in-from-top duration-500">
+            alire.co</p>
         <div class="absolute lg:right-[6rem] top-[8rem] border-primary border-[9px]">
-            <p class="text-3xl lg:text-7xl font-bold text-left text-primary p-8 animate-in fade-in duration-500">
+            <p class="text-3xl lg:text-7xl font-bold text-left text-primary p-4 md:p-8 animate-in fade-in duration-1000">
                 > EN CONSTRUCCIÓN
             </p>
         </div>
-        <div class="absolute pl-5 lg:pl-0 lg:left-[285px] top-[45vh] lg:top-[45vh] w-full lg:w-1/2">
-            <div class="typewriter mb-4 lg:mb-0">
+        <div class="absolute pl-5 lg:pl-0 lg:left-[285px] top-[45vh] lg:top-[45vh] w-full md:w-2/3 xl:w-1/2">
+            <div class="typewriter mb-4 lg:mb-8">
                 <h1>
-                    <a href="" class="text-7xl lg:text-[10rem] font-bold text-left text-primary font-code typewrite" data-period="10000000" data-type='["alire."]'>
+                    <a href="https://alire.co" class="text-7xl lg:text-[10rem] font-bold text-left text-primary font-code typewrite" data-period="10000000" data-type='["alire."]'>
                         alire.
                         <span class="wrap"></span>
                     </a>
                 </h1>
             </div>
             <div class="justify-start items-star relative pl-10">
-                <p class="text-2xl lg:text-5xl text-left text-primary font-primary leading-normal tracking-wide drop-shadow-md animate-in fade-in duration-500">
+                <p class="text-2xl lg:text-5xl text-left text-primary font-primary leading-snug lg:leading-snug tracking-wide drop-shadow-md animate-in slide-in-from-bottom duration-500">
                     Soluciones
                     innovadoras de <b>accesibilidad web</b> para personas con limitaciones <b>físicas</b>
                     o <b>cognitivas</b>.
@@ -61,7 +68,7 @@
             </div>
         </div>
         <p class="absolute right-0 bottom-0 mb-4 mr-4 text-lg font-bold text-left text-primary font-code animate-in slide-in-from-bottom duration-500">
-            2022 © alire.co
+            2022 © <a href="https://alire.co">alire.co</a>
         </p>
     </div>
 </body>
