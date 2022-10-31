@@ -1,17 +1,18 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Roboto+Mono&display=swap');
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-
-html,body { height: 100%; margin: 0px; padding: 0px; }
+html,
+body {
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+}
 
 .main-background {
     @apply inline-block;
     background: black;
-    background: radial-gradient(circle, rgba(5,0,4,0.5) 0%, rgba(4,4,4,1) 100%);
+    background: radial-gradient(circle, rgba(5, 0, 4, 0.5) 0%, rgba(4, 4, 4, 1) 100%);
 }
 
 .img-background {
